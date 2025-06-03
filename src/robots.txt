@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /articles
+Allow: /bible_studies
+Allow: /images
+
+Sitemap: https://korbanministries.co.za/sitemap.xml

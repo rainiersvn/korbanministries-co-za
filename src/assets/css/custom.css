@@ -1,0 +1,60 @@
+.custom {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.custom:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.articleHoverBadge {
+    padding-left: 4%;
+    overflow :hidden;
+}
+.customImg {
+    max-width:200px;
+    max-height:150px;
+}
+
+/* All article pages use these */
+section div div p {
+    font-size: medium;
+}
+section div div blockquote {
+    font-size: large;
+}
+/* These are mostly used by the misc articles */
+section div div ol {
+    margin-left: 4%;
+}
+section div div ul {
+    margin-left: 4%;
+}
+.iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.iframe-container iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* Used by the Sola Foundations page */
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    justify-content: center;
+}
+.column {
+    -ms-flex: 50%; /* IE10 */
+    flex: 0 1 auto;
+    margin: 30px;
+}

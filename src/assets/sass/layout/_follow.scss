@@ -1,0 +1,148 @@
+/* Follow */
+#follow {
+    background-color: #4C2672;
+    color: rgba(255, 255, 255, 0.75);
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(76, 38, 114, 0.25), rgba(76, 38, 114, 0.25)), url(../../images/wood_4k.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    z-index: 1; }
+    #follow input, #follow select, #follow textarea {
+      color: #ffffff; }
+    #follow a {
+      color: #ffffff; }
+    #follow strong, #follow b {
+      color: #ffffff; }
+    #follow h1, #follow h2, #follow h3, #follow h4, #follow h5, #follow h6 {
+      color: #ffffff; }
+    #follow blockquote {
+      border-left-color: rgba(255, 255, 255, 0.25); }
+    #follow code {
+      background: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+    #follow hr {
+      border-bottom-color: rgba(255, 255, 255, 0.25); }
+    #follow input[type="submit"],
+    #follow input[type="reset"],
+    #follow input[type="button"],
+    #follow button,
+    #follow .button {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 1px #ffffff;
+      color: #ffffff !important; }
+      #follow input[type="submit"]:hover,
+      #follow input[type="reset"]:hover,
+      #follow input[type="button"]:hover,
+      #follow button:hover,
+      #follow .button:hover {
+        background-color: rgba(255, 255, 255, 0.1); }
+        #follow input[type="submit"]:hover:active,
+        #follow input[type="reset"]:hover:active,
+        #follow input[type="button"]:hover:active,
+        #follow button:hover:active,
+        #follow .button:hover:active {
+          background-color: rgba(255, 255, 255, 0.25); }
+      #follow input[type="submit"].primary,
+      #follow input[type="reset"].primary,
+      #follow input[type="button"].primary,
+      #follow button.primary,
+      #follow .button.primary {
+        box-shadow: none;
+        background-color: #ffffff;
+        color: #4C2672 !important; }
+        #follow input[type="submit"].primary:hover,
+        #follow input[type="reset"].primary:hover,
+        #follow input[type="button"].primary:hover,
+        #follow button.primary:hover,
+        #follow .button.primary:hover {
+          background-color: rgba(255, 255, 255, 0.875);
+          box-shadow: none; }
+          #follow input[type="submit"].primary:hover:active,
+          #follow input[type="reset"].primary:hover:active,
+          #follow input[type="button"].primary:hover:active,
+          #follow button.primary:hover:active,
+          #follow .button.primary:hover:active {
+            background-color: rgba(255, 255, 255, 0.5); }
+    #follow label {
+      color: #ffffff; }
+    #follow input[type="text"],
+    #follow input[type="password"],
+    #follow input[type="email"],
+    #follow input[type="tel"],
+    #follow input[type="search"],
+    #follow input[type="url"],
+    #follow select,
+    #follow textarea {
+      background-color: rgba(255, 255, 255, 0.075);
+      border-color: rgba(255, 255, 255, 0.25); }
+      #follow input[type="text"]:focus,
+      #follow input[type="password"]:focus,
+      #follow input[type="email"]:focus,
+      #follow input[type="tel"]:focus,
+      #follow input[type="search"]:focus,
+      #follow input[type="url"]:focus,
+      #follow select:focus,
+      #follow textarea:focus {
+        border-color: #ffffff;
+        box-shadow: 0 0 0 1px #ffffff; }
+    #follow select {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(255, 255, 255, 0.25)' /%3E%3C/svg%3E"); }
+      #follow select option {
+        color: rgba(255, 255, 255, 0.75);
+        background-color: #4C2672; }
+    #follow input[type="checkbox"] + label,
+    #follow input[type="radio"] + label {
+      color: rgba(255, 255, 255, 0.75); }
+      #follow input[type="checkbox"] + label:before,
+      #follow input[type="radio"] + label:before {
+        background: rgba(255, 255, 255, 0.075);
+        border-color: rgba(255, 255, 255, 0.25); }
+    #follow input[type="checkbox"]:checked + label:before,
+    #follow input[type="radio"]:checked + label:before {
+      background-color: #ffffff;
+      border-color: #ffffff;
+      color: #4C2672; }
+    #follow input[type="checkbox"]:focus + label:before,
+    #follow input[type="radio"]:focus + label:before {
+      border-color: #ffffff;
+      box-shadow: 0 0 0 1px #ffffff; }
+    #follow ::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.4) !important; }
+    #follow :-moz-placeholder {
+      color: rgba(255, 255, 255, 0.4) !important; }
+    #follow ::-moz-placeholder {
+      color: rgba(255, 255, 255, 0.4) !important; }
+    #follow :-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.4) !important; }
+    #follow ul.alt li {
+      border-top-color: rgba(255, 255, 255, 0.25); }
+    #follow table tbody tr {
+      border-color: rgba(255, 255, 255, 0.25); }
+      #follow table tbody tr:nth-child(2n + 1) {
+        background-color: rgba(255, 255, 255, 0.075); }
+    #follow table th {
+      color: #ffffff; }
+    #follow table thead {
+      border-bottom-color: rgba(255, 255, 255, 0.25); }
+    #follow table tfoot {
+      border-top-color: rgba(255, 255, 255, 0.25); }
+    #follow table.alt tbody tr td {
+      border-color: rgba(255, 255, 255, 0.25); }
+    #follow .highlights .content {
+      background: #4C2672;
+      box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+    #follow .testimonials .content {
+      background: #4C2672;
+      box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
+      #follow .testimonials .content .credit strong {
+        color: #4C2672; }
+    #follow .inner {
+      position: relative;
+      z-index: 3; }
+    @media screen and (max-width: 980px) {
+      #follow {
+        background-attachment: scroll; } }
+  
