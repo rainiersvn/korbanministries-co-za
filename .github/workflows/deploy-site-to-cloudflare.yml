@@ -7,21 +7,23 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy-to-korbanministries-co-za:
+  deploy-to-rainier-cloudkid-link:
     runs-on: ubuntu-latest
     concurrency:
       group: deploy-to-r2-${{ github.ref }}
       cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Upload to Bucket
-        uses: ryand56/r2-upload-action@latest
-        with:
-          r2-account-id: ${{ secrets.KM_R2_ACCOUNT_ID }}
-          r2-access-key-id: ${{ secrets.KM_R2_ACCESS_KEY_ID }}
-          r2-secret-access-key: ${{ secrets.KM_R2_SECRET_ACCESS_KEY }}
-          r2-bucket: ${{ secrets.KM_R2_BUCKET }}
-          source-dir: ./src
-          destination-dir: ./
-          keep-file-fresh: true
+      - name: Configure AWS Credentials
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.KM_R2_ACCESS_KEY_ID }}
+          aws configure set aws_secret_access_key ${{ secrets.KM_R2_SECRET_ACCESS_KEY }}
+          aws configure set default.region auto
+
+      - name: Sync changed files to R2
+        run: |
+          aws s3 sync ./src s3://${{ secrets.KM_R2_BUCKET }} \
+            --endpoint-url https://${{ secrets.KM_R2_ACCOUNT_ID }}.r2.cloudflarestorage.com \
+            --size-only --delete
+
