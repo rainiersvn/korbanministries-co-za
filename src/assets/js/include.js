@@ -30,7 +30,7 @@ function updateCopyrightYear() {
 document.addEventListener('DOMContentLoaded', function() {
     // Check for footer placeholder
     if (document.getElementById('footer-placeholder')) {
-        includeHTML('footer-placeholder', '/assets/includes/footer.html');
+        includeHTML('footer-placeholder', 'assets/includes/footer.html');
         
         // Update copyright year after footer is loaded
         setTimeout(updateCopyrightYear, 100);
