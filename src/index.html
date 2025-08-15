@@ -28,6 +28,9 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	
+	<!-- Load the Cloudflare Turnstile script with onload callback -->
+	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
 
 	<script type="application/ld+json">
       {
@@ -159,7 +162,7 @@
 			opacity: 0;
 		}
 	</style>
-	
+
 	<div id="turnstile-overlay">
 		<h2>Wedding Photo Library</h2>
 		<div id="turnstile-message">Please complete the verification to access my site</div>
